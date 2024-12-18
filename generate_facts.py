@@ -123,6 +123,166 @@ TECH_ARTIFACTS = [
         "description": "Revolutionary object storage service that shaped cloud computing.",
         "code_sample": "s3.upload_file(file_name, bucket)",
         "fun_fact": "S3 stored over 100 trillion objects by 2021."
+    },
+    {
+        "title": "Early Computing",
+        "artifact_name": "ENIAC",
+        "year_of_origin": "1945",
+        "description": "The first general-purpose electronic computer, weighing 30 tons.",
+        "code_sample": "compute.ballistic_trajectory()",
+        "fun_fact": "ENIAC's 18,000 vacuum tubes had to be replaced at a rate of several per day just to keep it running."
+    },
+    {
+        "title": "Gaming History",
+        "artifact_name": "Magnavox Odyssey",
+        "year_of_origin": "1972",
+        "description": "The first commercial home video game console.",
+        "code_sample": "display.move_light_spot(x, y)",
+        "fun_fact": "Players had to put plastic overlays on their TV screens to add color to the games."
+    },
+    {
+        "title": "Personal Computing",
+        "artifact_name": "Apple I",
+        "year_of_origin": "1976",
+        "description": "The first Apple computer, hand-built by Steve Wozniak.",
+        "code_sample": "poke(memory_address, value)",
+        "fun_fact": "The Apple I was priced at $666.66 because Wozniak liked repeating digits."
+    },
+    {
+        "title": "Storage Evolution",
+        "artifact_name": "IBM 350 RAMAC",
+        "year_of_origin": "1956",
+        "description": "The first commercial computer with a hard disk drive.",
+        "code_sample": "seek_track(cylinder, head)",
+        "fun_fact": "Its 5MB storage capacity cost $35,000 ($3,500 per MB) - today you can get a MB for a fraction of a cent."
+    },
+    {
+        "title": "Networking Pioneers",
+        "artifact_name": "TCP/IP Protocol",
+        "year_of_origin": "1983",
+        "description": "The fundamental communication protocol of the internet.",
+        "code_sample": "packet.set_checksum(data)",
+        "fun_fact": "The entire internet was shut down for a day to switch everyone to TCP/IP - known as 'Flag Day'."
+    },
+    {
+        "title": "Computer Graphics",
+        "artifact_name": "Utah Teapot",
+        "year_of_origin": "1975",
+        "description": "The most famous 3D test model in computer graphics.",
+        "code_sample": "render.teapot(size, material)",
+        "fun_fact": "This teapot has appeared in Toy Story, The Simpsons, and countless other works as an inside joke."
+    },
+    {
+        "title": "Computer Mouse",
+        "artifact_name": "First Mouse",
+        "year_of_origin": "1964",
+        "description": "The first computer mouse, invented by Doug Engelbart at SRI.",
+        "code_sample": "cursor.move(delta_x, delta_y)",
+        "fun_fact": "The first mouse was made of wood and had only one button."
+    },
+    {
+        "title": "Early Programming",
+        "artifact_name": "FORTRAN",
+        "year_of_origin": "1957",
+        "description": "The first widely used high-level programming language.",
+        "code_sample": "DO 10 I = 1,N",
+        "fun_fact": "FORTRAN reduced the number of programming statements necessary to operate a machine by a factor of 20."
+    },
+    {
+        "title": "Operating Systems",
+        "artifact_name": "UNIX",
+        "year_of_origin": "1969",
+        "description": "The operating system that revolutionized computing.",
+        "code_sample": "fork(); exec();",
+        "fun_fact": "UNIX's development started when Ken Thompson's wife was on vacation, giving him a month of free time."
+    },
+    {
+        "title": "Computer Memory",
+        "artifact_name": "Core Memory",
+        "year_of_origin": "1951",
+        "description": "The first reliable and commercially successful random access memory.",
+        "code_sample": "memory.write(address, value)",
+        "fun_fact": "Core memory was hand-woven by factory workers, mostly women, who were chosen for their fine motor skills."
+    },
+    {
+        "title": "Game Consoles",
+        "artifact_name": "Nintendo Game Boy",
+        "year_of_origin": "1989",
+        "description": "Revolutionary handheld gaming device that defined portable gaming.",
+        "code_sample": "lcd.refresh_screen()",
+        "fun_fact": "The Game Boy could run for 30 hours on four AA batteries, a major feat for its time."
+    },
+    {
+        "title": "Computer Security",
+        "artifact_name": "RSA Algorithm",
+        "year_of_origin": "1977",
+        "description": "The first public-key cryptosystem, fundamental to modern security.",
+        "code_sample": "message = pow(ciphertext, private_key, n)",
+        "fun_fact": "The 'S' in RSA stands for Shamir, who developed it at age 18."
+    },
+    {
+        "title": "Computer Displays",
+        "artifact_name": "Xerox Alto",
+        "year_of_origin": "1973",
+        "description": "First computer with a graphical user interface and bitmap display.",
+        "code_sample": "window.draw_bitmap(x, y)",
+        "fun_fact": "The Alto's display was oriented vertically (portrait), unlike today's landscape monitors."
+    },
+    {
+        "title": "Microprocessors",
+        "artifact_name": "Intel 4004",
+        "year_of_origin": "1971",
+        "description": "The first commercial microprocessor.",
+        "code_sample": "cpu.execute_instruction()",
+        "fun_fact": "The 4004 had 2,300 transistors and ran at 740 kHz - less power than a modern calculator."
+    },
+    {
+        "title": "Data Storage",
+        "artifact_name": "CompactFlash",
+        "year_of_origin": "1994",
+        "description": "One of the first successful solid-state storage formats.",
+        "code_sample": "flash.write_sector(address)",
+        "fun_fact": "The original CompactFlash cards used the same type of pin connection as IDE hard drives."
+    },
+    {
+        "title": "Word Processing",
+        "artifact_name": "WordPerfect",
+        "year_of_origin": "1979",
+        "description": "One of the first widely successful word processors.",
+        "code_sample": "document.reveal_codes()",
+        "fun_fact": "WordPerfect was originally written for a Data General minicomputer, not a PC."
+    },
+    {
+        "title": "Computer Networks",
+        "artifact_name": "Token Ring",
+        "year_of_origin": "1984",
+        "description": "IBM's pioneering local area network technology.",
+        "code_sample": "token.pass_to_next()",
+        "fun_fact": "Token Ring ran at 4 Mbps, four times faster than original Ethernet."
+    },
+    {
+        "title": "Early AI",
+        "artifact_name": "ELIZA",
+        "year_of_origin": "1964",
+        "description": "One of the first programs to process natural language.",
+        "code_sample": "response = pattern.match(input)",
+        "fun_fact": "ELIZA was named after Eliza Doolittle from 'Pygmalion', as both were taught to communicate better."
+    },
+    {
+        "title": "Computer Sound",
+        "artifact_name": "Sound Blaster",
+        "year_of_origin": "1989",
+        "description": "The sound card that set the standard for PC audio.",
+        "code_sample": "audio.play_sample(frequency)",
+        "fun_fact": "Sound Blaster became so popular that 'Sound Blaster compatible' became a standard requirement for sound cards."
+    },
+    {
+        "title": "Digital Cameras",
+        "artifact_name": "Kodak DCS 100",
+        "year_of_origin": "1991",
+        "description": "The first commercially available digital SLR camera.",
+        "code_sample": "sensor.capture_image()",
+        "fun_fact": "The DCS 100 used a modified Nikon F3 body and stored images on a separate hard drive unit."
     }
 ]
 
