@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Space Technology",
+    "artifact_name": "Voyager 1",
+    "year_of_origin": "1977",
+    "description": "The first human-made object to enter interstellar space.",
+    "code_sample": "signal.transmit(earth_coordinates)",
+    "fun_fact": "Voyager 1's computer has only 69.63 kilobytes of memory, less than an average email.",
+    "date": "2024-12-17",
+    "artifact_number": "001"
+  }
+]
