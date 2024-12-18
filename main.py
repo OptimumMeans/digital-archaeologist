@@ -12,25 +12,28 @@ def home():
 
 @app.route('/api/artifact')
 def get_artifact():
-    artifact = get_current_artifact()
-    # Structure the response exactly as TRMNL expects
-    display_data = {
-        "content": {
-            "year": str(artifact["year"]),  # The large number at top
-            "artifact_name": artifact["title"],  # The title/name of the artifact
-            "description": artifact["description"],
-            "fun_fact": artifact["fun_fact"],
-            "number": f"#{str(artifact['artifact_number']).zfill(3)}"  # Formats as #001, #002, etc.
-        },
-        "meta": {
-            "type": "digital-archaeologist",
-            "display": {
-                "font": "monospace",
-                "layout": "standard"
+    try:
+        artifact = get_current_artifact()
+        display_data = {
+            "content": {
+                "year": str(artifact["year"]),
+                "artifact_name": artifact["title"],
+                "description": artifact["description"],
+                "fun_fact": artifact["fun_fact"],
+                "number": f"#{str(artifact['artifact_number']).zfill(3)}"
+            },
+            "meta": {
+                "type": "digital-archaeologist",
+                "display": {
+                    "font": "monospace",
+                    "layout": "standard"
+                }
             }
         }
-    }
-    return jsonify(display_data)
+        return jsonify(display_data)
+    except Exception as e:
+        print(f"Error: {str(e)}")  # For debugging
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
