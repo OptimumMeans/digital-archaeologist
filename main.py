@@ -13,18 +13,21 @@ def home():
 @app.route('/api/artifact')
 def get_artifact():
     artifact = get_current_artifact()
-    # Format specifically for TRMNL display
+    # Structure the response exactly as TRMNL expects
     display_data = {
-        "artifact": {
-            "year": str(artifact["year"]),
-            "number": str(artifact["artifact_number"]).zfill(3),
-            "title": artifact["title"],
+        "content": {
+            "year": str(artifact["year"]),  # The large number at top
+            "artifact_name": artifact["title"],  # The title/name of the artifact
             "description": artifact["description"],
-            "didYouKnow": artifact["fun_fact"]
+            "fun_fact": artifact["fun_fact"],
+            "number": f"#{str(artifact['artifact_number']).zfill(3)}"  # Formats as #001, #002, etc.
         },
-        "display": {
-            "layout": "digital-archaeologist",
-            "font": "monospace"
+        "meta": {
+            "type": "digital-archaeologist",
+            "display": {
+                "font": "monospace",
+                "layout": "standard"
+            }
         }
     }
     return jsonify(display_data)
