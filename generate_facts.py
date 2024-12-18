@@ -163,16 +163,13 @@ def get_current_artifact():
     """Get the current artifact for the TRMNL display."""
     artifact = get_unique_artifact()
     
-    # Format for TRMNL's 800x480 EPD display
-    display_data = {
+    return {
         "year": artifact["year_of_origin"],
         "title": artifact["artifact_name"],
         "description": artifact["description"],
         "fun_fact": artifact["fun_fact"],
         "artifact_number": artifact["artifact_number"]
     }
-    
-    return display_data
 
 if __name__ == "__main__":
     print(json.dumps(get_current_artifact(), indent=2))

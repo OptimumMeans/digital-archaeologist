@@ -12,7 +12,22 @@ def home():
 
 @app.route('/api/artifact')
 def get_artifact():
-    return jsonify(get_current_artifact())
+    artifact = get_current_artifact()
+    # Format specifically for TRMNL display
+    display_data = {
+        "artifact": {
+            "year": str(artifact["year"]),
+            "number": str(artifact["artifact_number"]).zfill(3),
+            "title": artifact["title"],
+            "description": artifact["description"],
+            "didYouKnow": artifact["fun_fact"]
+        },
+        "display": {
+            "layout": "digital-archaeologist",
+            "font": "monospace"
+        }
+    }
+    return jsonify(display_data)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
