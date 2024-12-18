@@ -1,43 +1,44 @@
 <div class="screen">
-  <div class="view view--full">
-    <div class="layout layout--col layout--center gap--xlarge">
-      <!-- Year display in top area with light background -->
-      <div class="item bg-gray-5">
-        <div class="content">
-          <span class="value value--xxxlarge value--tnums clamp--1">YEAR</span>
+    <div class="view view--full">
+      <div class="layout layout--col layout--center gap--xlarge">
+        <!-- Year display in top area with light background -->
+        <div class="item bg-gray-5" style="padding: 16px;">
+          <div style="display: flex; align-items: center; gap: 400px;">
+            <span class="value value--xlarge value--tnums">{{ year }}</span>
+            <img
+              class="image-dither"
+              src="https://i.ibb.co/PgnRg6y/digital-archaeologist.webp"
+              width="128"
+              height="128"
+            />
+          </div>
         </div>
-      </div>
-
-      <!-- Main content in white area -->
-      <div class="item bg-white">
-        <div class="content">
-          <span class="title clamp--2 label label--outline"
-            >{{ artifact_name }}</span
-          >
-          <div class="description clamp--4" style="margin-top: 10px">
-            {{ description }}
+        <!-- Main content in white area -->
+        <div class="item bg-white">
+          <div class="content">
+            <span class="title clamp--2 label label--outline">{{ artifact_name }}</span>
+            <div class="description clamp--4">
+              {{ description }}
+            </div>
+          </div>
+        </div>
+        <!-- Fun fact in very light background -->
+        <div class="item bg-white">
+          <div class="content">
+            <span class="label label--medium">★ Did You Know?</span>
+            <div class="description clamp--3">
+              {{ fun_fact }}
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Fun fact in very light background -->
-      <div class="item bg-gray-7">
-        <div class="content">
-          <span class="label label--medium">★ Did You Know?</span>
-          <div class="description clamp--3" style="margin-top: 10px">
-            {{ fun_fact }}
-          </div>
-        </div>
+      <div class="title_bar">
+        <img
+          class="image"
+          src="https://i.ibb.co/PgnRg6y/digital-archaeologist.webp"
+        />
+        <span class="title">Digital Archaeologist</span>
+        <span class="instance clamp--1">{{ number }}</span>
       </div>
-    </div>
-
-    <div class="title_bar">
-      <img
-        class="image"
-        src="https://i.ibb.co/PgnRg6y/digital-archaeologist.webp"
-      />
-      <span class="title">Digital Archaeologist</span>
-      <span class="instance clamp--1">#{{ artifact_number }}</span>
     </div>
   </div>
-</div>
