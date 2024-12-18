@@ -14,25 +14,16 @@ def home():
 def get_artifact():
     try:
         artifact = get_current_artifact()
-        display_data = {
-            "content": {
-                "year": str(artifact["year"]),
-                "artifact_name": artifact["title"],
-                "description": artifact["description"],
-                "fun_fact": artifact["fun_fact"],
-                "number": f"#{str(artifact['artifact_number']).zfill(3)}"
-            },
-            "meta": {
-                "type": "digital-archaeologist",
-                "display": {
-                    "font": "monospace",
-                    "layout": "standard"
-                }
-            }
-        }
-        return jsonify(display_data)
+        # Return flattened structure
+        return jsonify({
+            "artifact_name": artifact["title"],
+            "description": artifact["description"],
+            "fun_fact": artifact["fun_fact"],
+            "number": f"#{str(artifact['artifact_number']).zfill(3)}",
+            "year": str(artifact["year"])
+        })
     except Exception as e:
-        print(f"Error: {str(e)}")  # For debugging
+        print(f"Error: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
